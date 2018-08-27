@@ -3,12 +3,11 @@ import 'dart:math';
 class ArmstrongNumbers {
   bool isArmstrongNumber(int number){
     num sumOfDigits = 0;
-    var digitsOfNumber = number.toString();
-    var quantityOfDigits = digitsOfNumber.length;
+    var digitsOfNumber = number.toString().split('');
 
-    for (var digitPosition = 0; digitPosition < quantityOfDigits; digitPosition++) {
-      var digitValue = int.parse(digitsOfNumber[digitPosition]);
-      sumOfDigits += pow(digitValue, quantityOfDigits);
+    for (var digit in digitsOfNumber) {
+       var digitValue = int.parse(digit);
+       sumOfDigits += pow(digitValue, digitsOfNumber.length);
     }
 
     return sumOfDigits == number;
