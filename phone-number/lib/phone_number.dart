@@ -14,10 +14,6 @@ class PhoneNumber {
   }
 
   bool _startsWithZero(String phoneNumber) => phoneNumber.startsWith("0");
-  bool _firstExchangeCodeIsInvalid(String phoneNumber){
-    var firstExchangeCode = phoneNumber.substring(3, 4);
-
-    return firstExchangeCode == "0" || firstExchangeCode == "1";
-  }
+  bool _firstExchangeCodeIsInvalid(String phoneNumber) => phoneNumber[3] == "0" || phoneNumber[3] == "1";
   bool _lengthIsDiferentOfTen(String phoneNumber) => phoneNumber.length != 10;
 }
