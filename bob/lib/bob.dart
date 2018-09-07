@@ -1,9 +1,9 @@
 class Bob {
   String hey(String message){
-    if(message == "WHAT THE HELL WERE YOU THINKING?")
-      return "Calm down, I know what I'm doing!";
-
     var cleanMessage = message.trim();
+
+    if(_isShout(cleanMessage) && _isQuestion(cleanMessage))
+      return "Calm down, I know what I'm doing!";
     
     if(_noMessage(cleanMessage)) return "Fine. Be that way!";
     if(_isQuestion(cleanMessage)) return "Sure.";
