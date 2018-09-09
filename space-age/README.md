@@ -24,11 +24,7 @@ To run the tests:
 $ pub run test
 ```
 
-For more detailed info about the Dart track see the [installation](http://exercism.io/languages/dart/installation) and [testing](http://exercism.io/languages/dart/tests) pages.
-
 ## Source
 
 Partially inspired by Chapter 1 in Chris Pine's online Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=01](http://pine.fm/LearnToProgram/?Chapter=01)
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
