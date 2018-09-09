@@ -14,11 +14,7 @@ To run the tests:
 $ pub run test
 ```
 
-For more detailed info about the Dart track see the [help page](http://exercism.io/languages/dart).
-
 ## Source
 
 Julien Vanier [https://github.com/monkbroc](https://github.com/monkbroc)
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
