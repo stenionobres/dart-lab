@@ -27,17 +27,6 @@ phenomenon, go watch [this youtube video][video].
 [video]: http://www.youtube.com/watch?v=xX96xng7sAE
 
 
-To run the tests:
-
-```sh
-$ pub run test
-```
-
-For more detailed info about the Dart track see the [installation](http://exercism.io/languages/dart/installation) and [testing](http://exercism.io/languages/dart/tests) pages.
-
 ## Source
 
 JavaRanch Cattle Drive, exercise 3 [http://www.javaranch.com/leap.jsp](http://www.javaranch.com/leap.jsp)
-
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
