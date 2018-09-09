@@ -26,7 +26,7 @@ should all produce the output
 
 `6139950253`
 
-**Note:** As this exercise only deals with telephone numbers used in NANP-countries, only 1 is considered a valid country code.
+**Note:** Only deals with telephone numbers used in NANP-countries, only 1 is considered a valid country code.
 
 ## Tip
 
@@ -54,18 +54,13 @@ dynamic hello(int a){
 }
 
 
-
 To run the tests:
 
 ```sh
 $ pub run test
 ```
 
-For more detailed info about the Dart track see the [installation](http://exercism.io/languages/dart/installation) and [testing](http://exercism.io/languages/dart/tests) pages.
-
 ## Source
 
 Event Manager by JumpstartLab [http://tutorials.jumpstartlab.com/projects/eventmanager.html](http://tutorials.jumpstartlab.com/projects/eventmanager.html)
 
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
