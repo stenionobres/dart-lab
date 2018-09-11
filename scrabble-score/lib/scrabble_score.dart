@@ -28,7 +28,7 @@
     'z' : 10
   };
 
-  int score(String word){
+  int score(String word) {
     var scrabbleScore = 0;
 
     for (var character = 0; character < word.length; character++){
