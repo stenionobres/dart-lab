@@ -11,7 +11,7 @@ class SpaceAge {
     "Neptune": _earthOrbitalPeriod * 164.79132
   };
 
-  double age({String planet, int seconds}){
+  double age({String planet, int seconds}) {
     double age = seconds / _orbitalPeriodByPlanet[planet];
     return double.parse(age.toStringAsFixed(2));
   }
