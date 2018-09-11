@@ -1,7 +1,7 @@
 import 'dart:math';
 
 class ArmstrongNumbers {
-  bool isArmstrongNumber(int number){
+  bool isArmstrongNumber(int number) {
     num sumOfDigits = 0;
     var digitsOfNumber = number.toString().split('');
 
