@@ -1,5 +1,5 @@
 class Anagram {
-  List<String> findAnagrams(String word, List<String> possibleAnagrams){
+  List<String> findAnagrams(String word, List<String> possibleAnagrams) {
     var anagrams = new List<String>();
 
     if (_isCapital(word)) return anagrams;
@@ -13,15 +13,16 @@ class Anagram {
         var characterCounterOfPossibleAnagram = _countByCharacter(possibleAnagram);
         
         for (var counterByCharacter in characterCounterOfWord.entries) {
-            var character = counterByCharacter.key;
-            var quantity = counterByCharacter.value;
+          var character = counterByCharacter.key;
+          var quantity = counterByCharacter.value;
 
-            var characterIsAnagram = characterCounterOfPossibleAnagram[character] == quantity;
-            allCharactersIsAnagram.add(characterIsAnagram);
+          var characterIsAnagram = characterCounterOfPossibleAnagram[character] == quantity;
+          allCharactersIsAnagram.add(characterIsAnagram);
         }
        
-        if (allCharactersIsAnagram.every((element) => element == true)) 
-            anagrams.add(possibleAnagram);
+        if (allCharactersIsAnagram.every((element) => element == true)) {
+          anagrams.add(possibleAnagram);
+        }
     }
 
     return anagrams;
@@ -29,13 +30,14 @@ class Anagram {
 
   bool _isCapital(String word) => word == word.toUpperCase();
 
-  Map<String, int> _countByCharacter(String word){
+  Map<String, int> _countByCharacter(String word) {
     var counterByCharacter = new Map<String, int>();
     var lowerCaseCharacters = word.toLowerCase().split('');
 
     for (var character in lowerCaseCharacters) {
-      if (!counterByCharacter.containsKey(character))
-         counterByCharacter[character] = 0;
+      if (!counterByCharacter.containsKey(character)) {
+        counterByCharacter[character] = 0;
+      }
       counterByCharacter[character]++;
     }
 
