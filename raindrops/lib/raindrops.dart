@@ -1,5 +1,5 @@
 class Raindrops {
-  String convert(int number){
+  String convert(int number) {
     var raindrops = "";
 
     var isDivisibleByThree = _isDivisibleByThree(number);
@@ -10,8 +10,9 @@ class Raindrops {
     if (isDivisibleByFive) raindrops += "Plang";
     if (isDivisibleBySeven) raindrops += "Plong";
 
-    if(!isDivisibleByThree && !isDivisibleByFive && !isDivisibleBySeven)
+    if (!isDivisibleByThree && !isDivisibleByFive && !isDivisibleBySeven) {
        raindrops += number.toString();
+    }
 
     return raindrops;
   }
