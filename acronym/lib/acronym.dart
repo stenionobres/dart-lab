@@ -1,5 +1,5 @@
 class Acronym {
-  String abbreviate(String phrase){
+  String abbreviate(String phrase) {
     var initialLetter = 0;
     var acronym = "";
     var words = phrase.replaceAll("-", " ").split(" ");
