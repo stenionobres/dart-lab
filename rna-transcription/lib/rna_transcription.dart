@@ -6,7 +6,7 @@ class RnaTranscription {
     "A": "U"
   };
 
-  String toRna(String dnaStrand){
+  String toRna(String dnaStrand) {
     var rnaTranscription = "";
 
     for (var nucleotide = 0; nucleotide < dnaStrand.length; nucleotide++) {
@@ -17,9 +17,10 @@ class RnaTranscription {
     return rnaTranscription;
   }
 
-  String _getRnaNucleotide(String dnaNucleotide){
-    if(_rnaNucleotides.containsKey(dnaNucleotide))
+  String _getRnaNucleotide(String dnaNucleotide) {
+    if (_rnaNucleotides.containsKey(dnaNucleotide)) {
       return _rnaNucleotides[dnaNucleotide];
+    }
 
     throw ArgumentError("Invalid DNA Nucleotide");
   }
